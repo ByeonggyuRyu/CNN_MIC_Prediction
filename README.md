@@ -1,5 +1,5 @@
 # CNN_MIC_Prediction
-Welcome to the _CNN_MIC_Model_ repository. This Convolutional Neural Network model has been designed to predict MIC values of antibiotics using almagated data of whole genome sequence (WGS) and antibiotics Simplified Molecular Input Line Entry System (SMILES).
+Welcome to the _CNN_MIC_Model_ repository. This Convolutional Neural Network model has been designed to predict antibiotics MIC values of Klebsiella pneumoniae using almagated data of Kpn WGS and antibiotics SMILES.
 ## Background
 ### Feature Engineering & Data Processing
 **K-mer Strategy:** Our approach toward feature engineering was rooted in the k-mer strategy. From a dataset containing 1667 genomic samples, we identified 524,800 unique 10-mers.
