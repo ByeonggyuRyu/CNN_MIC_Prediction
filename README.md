@@ -17,4 +17,4 @@ Welcome to the _CNN_MIC_Model_ repository. This Convolutional Neural Network mod
 <br />
 <p align="center">
   <img src="./Figure_1_1200.png" width=75%>
-<\p>
+</p>
