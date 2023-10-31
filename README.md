@@ -13,3 +13,5 @@ Welcome to the _CNN_MIC_Model_ repository. This Convolutional Neural Network mod
 
 ### Final Data Preparation
 **Combining & Labeling:** The encoding for each genome-antibiotic pair from our 32,309 samples was achieved by summing the WGS and SMILES matrices and then undergoing a linear scaling operation (division by 2). Each pair was then labeled using the integer value equivalent to the Log2 of the laboratory-derived MIC value. This transformed our challenge into a multi-class classification task. We explored two labeling techniques: a conventional one-hot encoding of the exact label and a soft labeling strategy that highlighted 1-tier accurate labels close to the precise label to differentiate them from inaccurate labels.
+
+![Alt text](./Figure_1_1200.png?raw=true "Data encoding and labeling schematics in CNN based MIC prediction")
