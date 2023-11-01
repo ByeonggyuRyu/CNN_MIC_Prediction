@@ -23,14 +23,12 @@ random.seed(1)
 np.random.seed(1)
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
-# os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1, 2, 3, 4, 5, 6, 7'
-os.environ['CUDA_VISIBLE_DEVICES'] = '2, 3, 4, 5, 6, 7'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0, 1, 2, 3, 4, 5, 6, 7'
 
 gpus = tf.config.experimental.list_physical_devices("GPU")
 for i in range(len(gpus)):
     tf.config.experimental.set_memory_growth(gpus[i], True)
-# mirrored_strategy = tf.distribute.MirroredStrategy(devices=["/GPU:0", "/GPU:1", "/GPU:2", "/GPU:3", "/GPU:4", "/GPU:5", "/GPU:6", "/GPU:7"])
-mirrored_strategy = tf.distribute.MirroredStrategy(devices=["/GPU:2", "/GPU:3", "/GPU:4", "/GPU:5", "/GPU:6", "/GPU:7"])
+mirrored_strategy = tf.distribute.MirroredStrategy(devices=["/GPU:0", "/GPU:1", "/GPU:2", "/GPU:3", "/GPU:4", "/GPU:5", "/GPU:6", "/GPU:7"])
 
 from keras.backend import manual_variable_initialization 
 manual_variable_initialization(True)
@@ -144,8 +142,7 @@ def train(lstTrain, lstVal, modelRep):
       
     history = model.fit(training_generator, 
                     validation_data=validation_generator,
-                    # epochs=40,
-                    epochs=3,
+                    epochs=40,
                     use_multiprocessing=True,
                     workers=32, 
                     callbacks=[tensorboard, early_stopping, reduce_lr],
