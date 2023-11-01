@@ -20,7 +20,7 @@ Welcome to the _CNN_MIC_Prediction_ repository. This Convolutional Neural Networ
 </p>
 <br />
 
-## Usage
+## Local Usage
 Below are the steps to get your environment set up and the model training initiated.
 ### 1. Clone current repository 
 To clone the repository and navigate into it, execute the following commands in your terminal:
