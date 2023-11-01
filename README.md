@@ -30,9 +30,12 @@ git clone https://github.com/ByeonggyuRyu/CNN_MIC_Prediction.git
 cd CNN_MIC_Prediction
 ```
 ### 2. Install requirements
-Before running the model, you need to install the required libraries. Install python==3.7.15, then run:
+Before running the model, you need to install the required libraries.
+Create an environment with python version 3.7.15 and install the requirements by running:
 
 ```
+conda create --name cnn_mic python=3.7.15
+conda activate cnn_mic
 pip install -r requirements.txt
 ```
 This command will install all the necessary packages as listed in the _requirements.txt_ file.
