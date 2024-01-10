@@ -12,7 +12,7 @@ Welcome to the _CNN_MIC_Prediction_ repository. This Convolutional Neural Networ
 **Antibiotics Data Encoding:** We procured the isomeric SMILES data for antibiotics from the PubChem database. This data was transformed into a (130, 20) matrix using one-hot character encoding and then vertically stacked to synchronize with the dimensions of the WGS matrix.
 
 ### Final Data Preparation
-**Combining & Labeling:** The encoding for each genome-antibiotic pair from our 32,309 samples was achieved by summing the WGS and SMILES matrices and then undergoing a linear scaling operation (division by 2). Each pair was then labeled using the integer value equivalent to the Log2 of the laboratory-derived MIC value. This transformed our challenge into a multi-class classification task. We explored two labeling techniques: a conventional one-hot encoding of the exact label and a soft labeling strategy that highlighted 1-tier accurate labels close to the precise label to differentiate them from inaccurate labels.
+**Combining & Labeling:** The encoding for each genome-antibiotic pair from our 32,309 samples was achieved by summing the WGS and SMILES matrices and then undergoing a linear scaling operation (division by 2). Each pair was then labeled using the integer value equivalent to the Log2 of the laboratory-derived MIC value. This transformed our challenge into a multi-class classification task.
 
 <br />
 <p align="center">
