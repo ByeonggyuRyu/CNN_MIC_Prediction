@@ -16,7 +16,7 @@ Welcome to the _CNN_MIC_Prediction_ repository. This Convolutional Neural Networ
 
 <br />
 <p align="center">
-  <img src="./Figure_1.png" width=75%>
+  <img src="./Figure.png" width=75%>
 </p>
 <br />
 
